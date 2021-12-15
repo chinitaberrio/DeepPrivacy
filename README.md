@@ -50,6 +50,16 @@ or with pip:
 ```
 pip install git+https://github.com/hukkelas/DeepPrivacy/
 ```
+#### Conda
+```
+conda create --name deepprivacy python=3.8
+conda activate deepprivacy
+git clone https://github.com/chinitaberrio/DeepPrivacy.git
+conda install pytorch torchvision torchaudio cudatoolkit=10.2 -c pytorch
+python3 setup.py install
+conda remove ffmpeg
+conda install -c conda-forge ffmpeg==4.2.2
+```
 
 #### Docker
 In our experiments, we use docker as the virtual environment. 
